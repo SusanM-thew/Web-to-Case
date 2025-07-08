@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Submit a Case</title>
+<link rel="stylesheet" href="webtocase.css">
+ </head>
+<body>
+
+  <div class="form-container">
+    <h2>Submit a Support Case</h2>
+
+    <form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8&orgId=00DgK000004t0GP" method="POST">
+      <input type="hidden" name="orgid" value="00DgK000004t0GP">
+      <input type="hidden" name="retURL" value="file:///C:/Users/SusanMathew/OneDrive%20-%20DIGITAL%20BIZ%20SOLUTIONS%20PTE.%20LTD/Desktop/web%20to%20case/webtocasety.html">
+
+      <label for="name">Contact Name</label>
+      <input id="name" name="name" type="text" maxlength="80" required>
+
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" maxlength="80" required>
+
+      <label for="phone">Phone</label>
+      <input id="phone" name="phone" type="tel" maxlength="40">
+
+      <label for="subject">Subject</label>
+      <input id="subject" name="subject" type="text" maxlength="80" required>
+
+      <label for="description">Description</label>
+      <textarea name="description" rows="4" required></textarea>
+
+      <input type="submit" value="Submit Case">
+    </form>
+  </div>
+
+</body>
+</html>
